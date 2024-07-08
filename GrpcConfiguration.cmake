@@ -1,0 +1,13 @@
+set(gRPC_INSTALL TRUE)
+set(gRPC_PROTOBUF_PACKAGE_TYPE MODULE)
+set(protobuf_BUILD_LIBPROTOC ON)
+set(protobuf_BUILD_PROTOC_BINARIES ON)
+set(protobuf_BUILD_SHARED_LIBS OFF)
+set(protobuf_INSTALL ON)
+
+set(gRPC_ZLIB_PROVIDER package)
+set(gRPC_SSL_PROVIDER package)
+
+set(BUILD_SHARED_LIBS OFF)
+
+include("${CMAKE_CURRENT_LIST_DIR}/ThirdPartyLib.cmake")
