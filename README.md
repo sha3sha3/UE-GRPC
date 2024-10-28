@@ -80,6 +80,8 @@ Easy Grpc is an automation script and plugin that enable to cross compile [GRPC]
 - Build your proto files using build.bat.
 
 # Building GrpcLib for Windows
+**🚨 Warning: Attempting to clone and build this project in a directory path containing spaces may lead to unexpected errors. For best results, consider choosing a path without spaces.**
+
 Assuming that you already fulfill the prerequisites, all what you need to do is cloning this repo to a new folder, and open CMD then navigate to the same folder and run Win64.bat by typing Win64.bat to your CMD followed by pressing ENTER.
 The Automation script is going to build grpc for Windows, then create the respective windows version of GrpcLib module for Unreal engine, including the GrpcLib.Build.cs.
 
