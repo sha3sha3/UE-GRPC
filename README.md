@@ -105,7 +105,7 @@ At the end of building GrpcLib for Windows you will be asked:
 ```
 C:\grpc> Do you want to cross compile for Linux x86_64 (Y/[N])?
 ```
-In case you want to proceed, type Y and Enter. The Automation script is going to prepare the build environment inside WSL. [Clang](https://clang.llvm.org/) is going to be installed since Unreal Engine likes [Libc++](https://libcxx.llvm.org/) and this is the trick. Instead using [GCC](https://gcc.gnu.org/) with [Libstdc++](https://gcc.gnu.org/onlinedocs/libstdc++/) will build GrpcLib, but using it inside Unreal Engine will give you compilation errors.
+In case you want to proceed, type Y and Enter. The Automation script is going to prepare the build environment inside WSL. [Clang](https://clang.llvm.org/) is going to be installed since Unreal Engine likes [Libc++](https://libcxx.llvm.org/) and this is the trick. Instead of using [GCC](https://gcc.gnu.org/) with [Libstdc++](https://gcc.gnu.org/onlinedocs/libstdc++/) which will build GrpcLib without any issue, but using it inside Unreal Engine will give you compilation errors, we will be using Libc++.
 
 Often you will be asked to provide the password for your root Ubuntu user.
 
